@@ -25,5 +25,5 @@ class Connection:
 async def main():
     async with Connection('localhost', 9001) as conn:
         pass
-
-asyncio.run(main())
+if __name__ == '__main__':
+    asyncio.run(main())

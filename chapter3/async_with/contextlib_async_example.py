@@ -1,3 +1,4 @@
+import asyncio
 from contextlib import asynccontextmanager
 
 
@@ -22,5 +23,9 @@ def web_page(url: str):
     update_status(url)
 
 
-with web_page('google.com') as data:
-    process(data)
+async def main():
+    with web_page('google.com') as data:
+        process(data)
+
+if __name__ == '__main__':
+    asyncio.run(main())

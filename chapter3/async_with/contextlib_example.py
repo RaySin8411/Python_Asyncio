@@ -22,5 +22,10 @@ def web_page(url: str):
     update_status(url)
 
 
-with web_page('google.com') as data:
-    process(data)
+def main():
+    with web_page('google.com') as data:
+        process(data)
+
+
+if __name__ == '__main__':
+    main()
