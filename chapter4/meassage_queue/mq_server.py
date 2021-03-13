@@ -1,7 +1,9 @@
 import asyncio
+
 from asyncio import StreamReader, StreamWriter, gather
 from collections import deque, defaultdict
 from typing import Deque, DefaultDict
+
 from .msgproto import read_msg, send_msg
 
 SUBSCRIBERS: DefaultDict[bytes, Deque] = defaultdict(deque)
