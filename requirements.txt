@@ -36,3 +36,5 @@ websockets==8.1
 yarl==1.6.3
 zmq==0.0.0
 zope.interface==5.2.0
+
+asyncpg~=0.23.0
